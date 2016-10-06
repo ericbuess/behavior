@@ -561,6 +561,7 @@
 				BC07493C1D85865D00879E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC07493E1D85865D00879E41 /* Build configuration list for PBXNativeTarget "Behavior WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +570,7 @@
 				BC0749401D85865D00879E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC0749421D85865D00879E41 /* Build configuration list for PBXNativeTarget "Behavior" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +579,7 @@
 				BC0749441D85865D00879E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -33,7 +33,28 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
-        handler(nil)
+//        var data : Dictionary =
+        var entry : CLKComplicationTimelineEntry?
+        let now = Date()
+        
+        // Create the template and timeline entry
+        if complication.family == .modularSmall {
+//            let longText = data[
+            let textTemplate = CLKComplicationTemplateModularSmallStackText()
+            
+//textProviderWithStartDate:[NSDate date] endDate:[NSDate dateWithTimeIntervalSinceNow:((6*60*60)+(18*60))];
+        
+            let appGroupDefaults = UserDefaults(suiteName: "com.ericbuess.Behavior")
+            let firstGood = appGroupDefaults?.value(forKey: "firstGood") as! Int
+            let secondGood = appGroupDefaults?.value(forKey: "secondGood") as! Int
+            let firstBad = appGroupDefaults?.value(forKey: "firstBad") as! Int
+            let secondBad = appGroupDefaults?.value(forKey: "secondBad") as! Int
+            textTemplate.line1TextProvider = CLKSimpleTextProvider.init(text: "\(firstGood) \(firstBad)")
+            textTemplate.line2TextProvider = CLKSimpleTextProvider.init(text: "\(secondGood) \(secondBad)")
+            textTemplate.highlightLine2 = false
+            entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: textTemplate)
+        }
+        handler(entry)
     }
     
     func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
