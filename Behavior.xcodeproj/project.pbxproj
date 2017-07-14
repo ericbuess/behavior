@@ -220,23 +220,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Eric Buess";
 				TargetAttributes = {
 					BC0749081D85865C00879E41 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 92A2VUS94L;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 5MYLVE9C2Q;
+						ProvisioningStyle = Manual;
 					};
 					BC07491A1D85865C00879E41 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 92A2VUS94L;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 5MYLVE9C2Q;
+						ProvisioningStyle = Manual;
 					};
 					BC0749291D85865D00879E41 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 92A2VUS94L;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 5MYLVE9C2Q;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -371,13 +371,15 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5MYLVE9C2Q;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -397,6 +399,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "eb20171d-3ddc-4a06-b373-fa5f20632646";
+				PROVISIONING_PROFILE_SPECIFIER = "Behavior Development";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -422,13 +426,15 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5MYLVE9C2Q;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -441,6 +447,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "eb20171d-3ddc-4a06-b373-fa5f20632646";
+				PROVISIONING_PROFILE_SPECIFIER = "Behavior Ad Hoc";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,11 +460,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 92A2VUS94L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				DEVELOPMENT_TEAM = 5MYLVE9C2Q;
 				INFOPLIST_FILE = "Behavior WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericbuess.Behavior.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "90c6878e-1363-4dce-a0ab-19bedee9a43f";
+				PROVISIONING_PROFILE_SPECIFIER = "Behavior Development";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -469,11 +481,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 92A2VUS94L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				DEVELOPMENT_TEAM = 5MYLVE9C2Q;
 				INFOPLIST_FILE = "Behavior WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericbuess.Behavior.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "eb20171d-3ddc-4a06-b373-fa5f20632646";
+				PROVISIONING_PROFILE_SPECIFIER = "Behavior Ad Hoc";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -487,11 +503,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 92A2VUS94L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5MYLVE9C2Q;
 				IBSC_MODULE = Behavior_WatchKit_Extension;
 				INFOPLIST_FILE = "Behavior WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericbuess.Behavior.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "90c6878e-1363-4dce-a0ab-19bedee9a43f";
+				PROVISIONING_PROFILE_SPECIFIER = "Behavior Development";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -505,11 +526,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 92A2VUS94L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 5MYLVE9C2Q;
 				IBSC_MODULE = Behavior_WatchKit_Extension;
 				INFOPLIST_FILE = "Behavior WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericbuess.Behavior.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eb20171d-3ddc-4a06-b373-fa5f20632646";
+				PROVISIONING_PROFILE_SPECIFIER = "Behavior Ad Hoc";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -522,12 +548,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 92A2VUS94L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5MYLVE9C2Q;
 				INFOPLIST_FILE = Behavior/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericbuess.Behavior;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "90c6878e-1363-4dce-a0ab-19bedee9a43f";
+				PROVISIONING_PROFILE_SPECIFIER = "Behavior Development";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -536,11 +565,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 92A2VUS94L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: East Texas Medical Center Regional Healthcare System (5MYLVE9C2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 5MYLVE9C2Q;
 				INFOPLIST_FILE = Behavior/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericbuess.Behavior;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eb20171d-3ddc-4a06-b373-fa5f20632646";
+				PROVISIONING_PROFILE_SPECIFIER = "Behavior Ad Hoc";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
