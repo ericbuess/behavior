@@ -226,16 +226,19 @@
 					BC0749081D85865C00879E41 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5MYLVE9C2Q;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
 					BC07491A1D85865C00879E41 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5MYLVE9C2Q;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
 					BC0749291D85865D00879E41 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5MYLVE9C2Q;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -471,7 +474,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "Behavior Development";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -492,7 +496,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "Behavior Ad Hoc";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -515,7 +520,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "Behavior Development";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -538,7 +544,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "Behavior Ad Hoc";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -557,7 +564,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "90c6878e-1363-4dce-a0ab-19bedee9a43f";
 				PROVISIONING_PROFILE_SPECIFIER = "Behavior Development";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -574,7 +582,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "eb20171d-3ddc-4a06-b373-fa5f20632646";
 				PROVISIONING_PROFILE_SPECIFIER = "Behavior Ad Hoc";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
