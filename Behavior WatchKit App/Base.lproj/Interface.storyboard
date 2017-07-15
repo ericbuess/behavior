@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13156.6" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,39 +13,53 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Behavior_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="1" alignment="left" id="kZz-2v-Dkt">
+                        <group height="1" alignment="left" layout="vertical" id="o38-ae-uic">
                             <items>
-                                <button width="76" height="1" alignment="left" title="0" id="tcZ-Tw-4oH">
-                                    <gestureRecognizers>
-                                        <swipeGestureRecognizer direction="8" id="ipu-7a-tEe">
+                                <group width="1" height="0.5" alignment="left" verticalAlignment="center" spacing="0.0" id="kZz-2v-Dkt">
+                                    <items>
+                                        <button width="48" height="1" alignment="left" verticalAlignment="center" title="- " id="tcZ-Tw-4oH">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.9160282713300516" green="0.84295695979922203" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="system" pointSize="22"/>
                                             <connections>
-                                                <action selector="firstUpButtonSwipedDown:" destination="AgC-eL-Hgc" id="kMw-fb-bvt"/>
+                                                <action selector="decrementChild1Button" destination="AgC-eL-Hgc" id="rBA-e3-rU0"/>
                                             </connections>
-                                        </swipeGestureRecognizer>
-                                    </gestureRecognizers>
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="backgroundColor" red="0.9160282713300516" green="0.84295695979922203" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <fontDescription key="font" type="system" pointSize="30"/>
-                                    <variation key="device=watch38mm" width="66"/>
-                                    <connections>
-                                        <action selector="firstUpButtonTapped" destination="AgC-eL-Hgc" id="JrK-YN-VeR"/>
-                                    </connections>
-                                </button>
-                                <button width="76" height="1" alignment="left" title="0" id="iPT-VT-muJ">
-                                    <gestureRecognizers>
-                                        <swipeGestureRecognizer direction="8" id="EMR-ya-SHw">
+                                        </button>
+                                        <label width="54" height="1" alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="C3P-79-fuS">
+                                            <fontDescription key="font" type="system" pointSize="28"/>
+                                        </label>
+                                        <button width="48" height="1" alignment="right" verticalAlignment="center" title="+" id="iPT-VT-muJ">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.91602827129999997" green="0.84295695979999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="system" pointSize="22"/>
                                             <connections>
-                                                <action selector="secondUpButtonSwipedDown:" destination="AgC-eL-Hgc" id="5oc-mr-biu"/>
+                                                <action selector="incrementChild1Button" destination="AgC-eL-Hgc" id="eHE-xf-XtW"/>
                                             </connections>
-                                        </swipeGestureRecognizer>
-                                    </gestureRecognizers>
-                                    <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="30"/>
-                                    <variation key="device=watch38mm" width="66"/>
-                                    <connections>
-                                        <action selector="secondUpButtonTapped" destination="AgC-eL-Hgc" id="jEc-Iz-ksh"/>
-                                    </connections>
-                                </button>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.5" alignment="left" verticalAlignment="center" spacing="0.0" id="cPF-Th-nFN">
+                                    <items>
+                                        <button width="48" height="1" alignment="left" verticalAlignment="center" title="- " id="11s-mX-QE4">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="22"/>
+                                            <connections>
+                                                <action selector="decrementChild2Button" destination="AgC-eL-Hgc" id="4ix-W6-BCJ"/>
+                                            </connections>
+                                        </button>
+                                        <label width="54" height="1" alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="x5T-Sw-glV">
+                                            <fontDescription key="font" type="system" pointSize="28"/>
+                                        </label>
+                                        <button width="48" height="1" alignment="right" verticalAlignment="center" title="+" id="loi-N5-bdq">
+                                            <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="22"/>
+                                            <connections>
+                                                <action selector="incrementChild2Button" destination="AgC-eL-Hgc" id="sTM-Yf-eQ4"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
                             </items>
                         </group>
                     </items>
@@ -60,8 +74,8 @@
                         </items>
                     </menu>
                     <connections>
-                        <outlet property="firstUpButton" destination="tcZ-Tw-4oH" id="1eF-4r-ccb"/>
-                        <outlet property="secondUpButton" destination="iPT-VT-muJ" id="uMS-91-rJF"/>
+                        <outlet property="pointsForChild1Label" destination="C3P-79-fuS" id="hJa-Jz-JUB"/>
+                        <outlet property="pointsForChild2Label" destination="x5T-Sw-glV" id="BCu-bF-RSv"/>
                     </connections>
                 </controller>
             </objects>

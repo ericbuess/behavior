@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Behavior WatchKit Extension/ComplicationController.swift"
-            timestampString = "521782309.641353"
+            timestampString = "521788323.516657"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Behavior WatchKit Extension/InterfaceController.swift"
-            timestampString = "521750285.83749"
+            timestampString = "521788323.516771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "pointsForChild1"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Behavior WatchKit Extension/InterfaceController.swift"
-            timestampString = "521750285.837723"
+            timestampString = "521788323.516861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "willActivate()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
