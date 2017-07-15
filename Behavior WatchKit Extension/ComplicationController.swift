@@ -47,10 +47,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let appGroupDefaults = UserDefaults(suiteName: "com.ericbuess.Behavior")
             let firstGood = appGroupDefaults?.value(forKey: "firstGood") as! Int
             let secondGood = appGroupDefaults?.value(forKey: "secondGood") as! Int
-            let firstBad = appGroupDefaults?.value(forKey: "firstBad") as! Int
-            let secondBad = appGroupDefaults?.value(forKey: "secondBad") as! Int
-            textTemplate.line1TextProvider = CLKSimpleTextProvider.init(text: "\(firstGood) \(firstBad)")
-            textTemplate.line2TextProvider = CLKSimpleTextProvider.init(text: "\(secondGood) \(secondBad)")
+//            let firstBad = appGroupDefaults?.value(forKey: "firstBad") as! Int
+//            let secondBad = appGroupDefaults?.value(forKey: "secondBad") as! Int
+//            textTemplate.line1TextProvider = CLKSimpleTextProvider.init(text: "\(firstGood) \(firstBad)")
+//            textTemplate.line2TextProvider = CLKSimpleTextProvider.init(text: "\(secondGood) \(secondBad)")
+            textTemplate.line1TextProvider = CLKSimpleTextProvider.init(text: "\(firstGood)")
+            textTemplate.line2TextProvider = CLKSimpleTextProvider.init(text: "\(secondGood)")
             textTemplate.highlightLine2 = false
             entry = CLKComplicationTimelineEntry(date: now, complicationTemplate: textTemplate)
         }

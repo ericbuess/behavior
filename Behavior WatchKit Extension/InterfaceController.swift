@@ -14,9 +14,9 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func resetMenuItemTapped() {
         firstGood = 0
-        firstBad = 0
+//        firstBad = 0
         secondGood = 0
-        secondBad = 0
+//        secondBad = 0
     }
     
     let appGroupDefaults = UserDefaults(suiteName: "com.ericbuess.Behavior")
@@ -39,47 +39,47 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
-    var firstBad = 0 {
-        didSet {
-            if firstBad > 0 {
-                firstBad = 0
-            }
-            firstDownButton.setTitle("\(firstBad)")
-        }
-    }
+//    var firstBad = 0 {
+//        didSet {
+//            if firstBad > 0 {
+//                firstBad = 0
+//            }
+//            firstDownButton.setTitle("\(firstBad)")
+//        }
+//    }
     
-    var secondBad = 0 {
-        didSet {
-            if secondBad > 0 {
-                secondBad = 0
-            }
-            secondDownButton.setTitle("\(secondBad)")
-        }
-    }
+//    var secondBad = 0 {
+//        didSet {
+//            if secondBad > 0 {
+//                secondBad = 0
+//            }
+//            secondDownButton.setTitle("\(secondBad)")
+//        }
+//    }
     
     @IBOutlet var firstUpButton: WKInterfaceButton!
 
-    @IBOutlet var firstDownButton: WKInterfaceButton!
+//    @IBOutlet var firstDownButton: WKInterfaceButton!
     
     @IBOutlet var secondUpButton: WKInterfaceButton!
     
-    @IBOutlet var secondDownButton: WKInterfaceButton!
+//    @IBOutlet var secondDownButton: WKInterfaceButton!
     
     @IBAction func firstUpButtonTapped() {
         firstGood += 1
     }
     
-    @IBAction func firstDownButtonTapped() {
-        firstBad -= 1
-    }
+//    @IBAction func firstDownButtonTapped() {
+//        firstBad -= 1
+//    }
     
     @IBAction func secondUpButtonTapped() {
         secondGood += 1
     }
     
-    @IBAction func secondDownButtonTapped() {
-        secondBad -= 1
-    }
+//    @IBAction func secondDownButtonTapped() {
+//        secondBad -= 1
+//    }
     
     @IBAction func firstUpButtonSwipedDown(_ sender: AnyObject) {
         firstGood -= 1
@@ -89,13 +89,13 @@ class InterfaceController: WKInterfaceController {
         secondGood -= 1
     }
     
-    @IBAction func firstDownButtonSwipedUp(_ sender: AnyObject) {
-        firstBad += 1
-    }
+//    @IBAction func firstDownButtonSwipedUp(_ sender: AnyObject) {
+//        firstBad += 1
+//    }
     
-    @IBAction func secondDownButtonSwipedUp(_ sender: AnyObject) {
-        secondBad += 1
-    }
+//    @IBAction func secondDownButtonSwipedUp(_ sender: AnyObject) {
+//        secondBad += 1
+//    }
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -108,8 +108,8 @@ class InterfaceController: WKInterfaceController {
         super.willActivate()
         firstGood = appGroupDefaults?.value(forKey: "firstGood") as? Int ?? 0
         secondGood = appGroupDefaults?.value(forKey: "secondGood") as? Int ?? 0
-        firstBad = appGroupDefaults?.value(forKey: "firstBad") as? Int ?? 0
-        secondBad = appGroupDefaults?.value(forKey: "secondBad") as? Int ?? 0
+//        firstBad = appGroupDefaults?.value(forKey: "firstBad") as? Int ?? 0
+//        secondBad = appGroupDefaults?.value(forKey: "secondBad") as? Int ?? 0
     }
     
     override func didDeactivate() {
@@ -124,14 +124,14 @@ class InterfaceController: WKInterfaceController {
             appGroupDefaults?.set(secondGood, forKey: "secondGood")
             changes = true
         }
-        if appGroupDefaults?.value(forKey: "firstBad") as? Int != firstBad {
-            appGroupDefaults?.set(firstBad, forKey: "firstBad")
-            changes = true
-        }
-        if appGroupDefaults?.value(forKey: "secondBad") as? Int != secondBad {
-            appGroupDefaults?.set(secondBad, forKey: "secondBad")
-            changes = true
-        }
+//        if appGroupDefaults?.value(forKey: "firstBad") as? Int != firstBad {
+//            appGroupDefaults?.set(firstBad, forKey: "firstBad")
+//            changes = true
+//        }
+//        if appGroupDefaults?.value(forKey: "secondBad") as? Int != secondBad {
+//            appGroupDefaults?.set(secondBad, forKey: "secondBad")
+//            changes = true
+//        }
         if changes {
             appGroupDefaults?.synchronize()
             let server=CLKComplicationServer.sharedInstance()

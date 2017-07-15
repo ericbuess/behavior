@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13156.6" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13040"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -10,76 +13,39 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Behavior_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="kZz-2v-Dkt">
+                        <group width="1" height="1" alignment="left" id="kZz-2v-Dkt">
                             <items>
-                                <group alignment="left" layout="vertical" id="VZh-N2-1tj">
-                                    <items>
-                                        <button width="76" height="85" alignment="left" title="0" id="tcZ-Tw-4oH">
-                                            <gestureRecognizers>
-                                                <swipeGestureRecognizer direction="8" id="ipu-7a-tEe">
-                                                    <connections>
-                                                        <action selector="firstUpButtonSwipedDown:" destination="AgC-eL-Hgc" id="kMw-fb-bvt"/>
-                                                    </connections>
-                                                </swipeGestureRecognizer>
-                                            </gestureRecognizers>
-                                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="font" type="system" pointSize="30"/>
-                                            <variation key="device=watch38mm" height="74" width="66"/>
+                                <button width="76" height="1" alignment="left" title="0" id="tcZ-Tw-4oH">
+                                    <gestureRecognizers>
+                                        <swipeGestureRecognizer direction="8" id="ipu-7a-tEe">
                                             <connections>
-                                                <action selector="firstUpButtonTapped" destination="AgC-eL-Hgc" id="JrK-YN-VeR"/>
+                                                <action selector="firstUpButtonSwipedDown:" destination="AgC-eL-Hgc" id="kMw-fb-bvt"/>
                                             </connections>
-                                        </button>
-                                        <button width="76" height="85" alignment="left" title="0" id="iPT-VT-muJ">
-                                            <gestureRecognizers>
-                                                <swipeGestureRecognizer direction="8" id="EMR-ya-SHw">
-                                                    <connections>
-                                                        <action selector="secondUpButtonSwipedDown:" destination="AgC-eL-Hgc" id="5oc-mr-biu"/>
-                                                    </connections>
-                                                </swipeGestureRecognizer>
-                                            </gestureRecognizers>
-                                            <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="font" type="system" pointSize="30"/>
-                                            <variation key="device=watch38mm" height="74" width="66"/>
+                                        </swipeGestureRecognizer>
+                                    </gestureRecognizers>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" red="0.9160282713300516" green="0.84295695979922203" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" pointSize="30"/>
+                                    <variation key="device=watch38mm" width="66"/>
+                                    <connections>
+                                        <action selector="firstUpButtonTapped" destination="AgC-eL-Hgc" id="JrK-YN-VeR"/>
+                                    </connections>
+                                </button>
+                                <button width="76" height="1" alignment="left" title="0" id="iPT-VT-muJ">
+                                    <gestureRecognizers>
+                                        <swipeGestureRecognizer direction="8" id="EMR-ya-SHw">
                                             <connections>
-                                                <action selector="secondUpButtonTapped" destination="AgC-eL-Hgc" id="jEc-Iz-ksh"/>
+                                                <action selector="secondUpButtonSwipedDown:" destination="AgC-eL-Hgc" id="5oc-mr-biu"/>
                                             </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                                <group alignment="left" layout="vertical" id="n8w-hO-3Dj">
-                                    <items>
-                                        <button width="76" height="85" alignment="left" title="0" id="PPS-QE-Bm0">
-                                            <gestureRecognizers>
-                                                <swipeGestureRecognizer direction="4" id="BRQ-W2-Gej">
-                                                    <connections>
-                                                        <action selector="firstDownButtonSwipedUp:" destination="AgC-eL-Hgc" id="Ewg-Pz-tf8"/>
-                                                    </connections>
-                                                </swipeGestureRecognizer>
-                                            </gestureRecognizers>
-                                            <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="font" type="system" pointSize="30"/>
-                                            <variation key="device=watch38mm" height="74" width="66"/>
-                                            <connections>
-                                                <action selector="firstDownButtonTapped" destination="AgC-eL-Hgc" id="hkR-Hn-fCb"/>
-                                            </connections>
-                                        </button>
-                                        <button width="76" height="85" alignment="left" title="0" id="QD5-C5-Sdp">
-                                            <gestureRecognizers>
-                                                <swipeGestureRecognizer direction="4" id="64E-7g-0lF">
-                                                    <connections>
-                                                        <action selector="secondDownButtonSwipedUp:" destination="AgC-eL-Hgc" id="btM-cP-cRP"/>
-                                                    </connections>
-                                                </swipeGestureRecognizer>
-                                            </gestureRecognizers>
-                                            <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="font" type="system" pointSize="30"/>
-                                            <variation key="device=watch38mm" height="74" width="66"/>
-                                            <connections>
-                                                <action selector="secondDownButtonTapped" destination="AgC-eL-Hgc" id="t3l-Kb-sYf"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
+                                        </swipeGestureRecognizer>
+                                    </gestureRecognizers>
+                                    <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="30"/>
+                                    <variation key="device=watch38mm" width="66"/>
+                                    <connections>
+                                        <action selector="secondUpButtonTapped" destination="AgC-eL-Hgc" id="jEc-Iz-ksh"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
@@ -94,9 +60,7 @@
                         </items>
                     </menu>
                     <connections>
-                        <outlet property="firstDownButton" destination="PPS-QE-Bm0" id="4zH-d9-qz9"/>
                         <outlet property="firstUpButton" destination="tcZ-Tw-4oH" id="1eF-4r-ccb"/>
-                        <outlet property="secondDownButton" destination="QD5-C5-Sdp" id="bFw-rx-U38"/>
                         <outlet property="secondUpButton" destination="iPT-VT-muJ" id="uMS-91-rJF"/>
                     </connections>
                 </controller>
